@@ -77,7 +77,14 @@ h1 {
 }
 .reel-content { width: fit-content; background: #191515; padding: 16px 22px; }
 .reel-content .label { margin-bottom: 5px; }
-.reel-content p { margin: 0; font-size: clamp(1.5rem, 4vw, 2.25rem); font-weight: 650; }
+.reel-link {
+  display: inline-block;
+  color: var(--paper);
+  font-size: clamp(1.25rem, 4vw, 2.25rem);
+  font-weight: 650;
+  text-underline-offset: 0.18em;
+}
+.reel-link span { color: var(--accent); }
 .work { margin-block: clamp(54px, 8vw, 95px); }
 .work h2, .contact h2 { margin: 0; letter-spacing: -0.035em; font-size: clamp(1.6rem, 4vw, 2.65rem); }
 .work h2 { margin-bottom: 22px; }
