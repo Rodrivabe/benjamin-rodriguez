@@ -81,7 +81,7 @@ nav a { color: var(--muted); }
 .reel-player {
   display: block;
   width: 100%;
-  height: clamp(200px, 56.25vw, 72svh);
+  height: clamp(200px, max(56.25vw, 80svh), 90svh);
   border: 0;
   background: #030810;
 }
@@ -119,6 +119,7 @@ nav a { color: var(--muted); }
 .contact { border-top: 1px solid var(--line); padding-block: 25px 36px; }
 .contact a span { color: var(--accent); }
 @media (max-width: 620px) {
+  .reel-player { height: clamp(200px, 56.25vw, 72svh); }
   .wrap { width: calc(100% - 32px); }
   .intro, .project { grid-template-columns: 1fr; }
   .portrait {
