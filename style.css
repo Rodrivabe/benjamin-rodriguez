@@ -5,8 +5,6 @@
   --muted: #adbbcd;
   --line: #28394f;
   --accent: #9cbedf;
-  --tie: #163632;
-  --tie-light: #91c5b6;
   font-family: system-ui, sans-serif;
   background: var(--ink);
   color: var(--paper);
@@ -33,7 +31,6 @@ a:hover { color: var(--accent); }
 }
 .identity .label {
   margin: 5px 0 0;
-  color: var(--tie-light);
 }
 .brand a, nav a { text-decoration: none; }
 .brand { margin: 0; font-size: 1rem; font-weight: 700; }
@@ -46,9 +43,9 @@ nav a { color: var(--muted); }
   gap: clamp(20px, 4vw, 48px);
   margin-top: clamp(30px, 5vw, 56px);
   padding: clamp(20px, 4vw, 44px);
-  border: 1px solid #285048;
+  border: 1px solid var(--line);
   border-radius: 4px;
-  background: var(--tie);
+  background: #101d2f;
 }
 .label {
   color: var(--accent);
@@ -65,7 +62,7 @@ nav a { color: var(--muted); }
   color: var(--muted);
 }
 .lede + .lede { margin-top: 16px; }
-.lede a { color: var(--tie-light); text-underline-offset: 0.16em; }
+.lede a { color: var(--accent); text-underline-offset: 0.16em; }
 .portrait {
   display: block;
   width: 100%;
