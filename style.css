@@ -5,8 +5,8 @@
   --muted: #adbbcd;
   --line: #28394f;
   --accent: #9cbedf;
-  --tie: #294842;
-  --tie-light: #a3c4ba;
+  --tie: #163632;
+  --tie-light: #91c5b6;
   font-family: system-ui, sans-serif;
   background: var(--ink);
   color: var(--paper);
@@ -39,7 +39,13 @@ a:hover { color: var(--accent); }
 .brand { font-weight: 700; }
 nav { display: flex; flex-wrap: wrap; gap: clamp(16px, 4vw, 40px); }
 nav a { color: var(--muted); }
-.intro { padding-top: clamp(36px, 6vw, 68px); }
+.intro {
+  margin-top: clamp(30px, 5vw, 56px);
+  padding: clamp(20px, 4vw, 44px);
+  border: 1px solid #285048;
+  border-radius: 4px;
+  background: var(--tie);
+}
 .label {
   color: var(--accent);
   font: 600 0.78rem/1.4 ui-monospace, monospace;
@@ -55,7 +61,7 @@ nav a { color: var(--muted); }
   color: var(--muted);
 }
 .lede + .lede { margin-top: 16px; }
-.lede a { color: var(--accent); text-underline-offset: 0.16em; }
+.lede a { color: var(--tie-light); text-underline-offset: 0.16em; }
 .reel {
   border-top: 1px solid var(--tie);
   border-bottom: 1px solid var(--line);
